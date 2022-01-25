@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(90deg, rgb(60, 58, 69), rgb(95, 69, 191));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  background: linear-gradient(90deg, rgb(61, 218, 196), rgb(229, 113, 196));
+  cursor: pointer;
+  /* box-shadow: inset 0 0 0 0 #2b0557; */
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+button:hover {
+  box-shadow: inset 0 0 0 50px #550fa5;
+}
+
