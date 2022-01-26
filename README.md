@@ -6,16 +6,16 @@ This application detects and labels faces in user inputted images. Users can reg
 
 ## Table of Contents
 1. [Implementation Detail](#implementation)
-    I. [Frontend](#frontend)
-        a. [Planning the User Interface](#planningui)
-        b. [Building a Static Version](#buildingstatic)
-        c. [Adding State](#addingstate)
-        d. [Adding Inverse Data Flow](#inverseflow)
-    II. [Backend](#backend)
-        a. [Making an Express Server](#express)
-        b. [Creating a PostgreSQL Database](#database)
-        c. [Putting the Pieces Together](#puttingtogether)
-    III. [Deploying the Web App](#deployingwebapp)
+    1. [Frontend](#frontend)
+        1. [Planning the User Interface](#planningui)
+        2. [Building a Static Version](#buildingstatic)
+        3. [Adding State](#addingstate)
+        4. [Adding Inverse Data Flow](#inverseflow)
+    2. [Backend](#backend)
+        1. [Making an Express Server](#express)
+        2. [Creating a PostgreSQL Database](#database)
+        3. [Putting the Pieces Together](#puttingtogether)
+    3. [Deploying the Web App](#deployingwebapp)
 2. [Using the Application](#usingtheapp)
 3. [Built With](#builtwith)
 
@@ -105,7 +105,7 @@ On the homepage, there is a register button if the user is new. Clicking the but
 ![image](images/register.PNG)
 
 Upon successful registration, the application directs the user back to the sign in form. After signing in, the main screen looks like this.
-![image](images/homepage.PNG)
+![image](images/mainscreen.PNG)
 
 Finally, entering an image url into the input box and clicking on the detect button will display the image below, along with a bounding box around any detected faces.
 ![image](images/facedetection.PNG)
