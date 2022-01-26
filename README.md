@@ -97,7 +97,7 @@ Now that the front and back end were complete, I updated the fetch urls in the f
 ### Deploying the Web App <a name="deployingwebapp"></a>
 I decided to deploy each part of the application on Heroku. The frontend deployment process was relatively simple, as I simply had to upload it to a github repository, build and then deploy. However, I ran into a number of issues during the backend deployment process. First, there was the issue of the server port and database connection string; using the localhost address and port would not work when deployed to Heroku. In order to solve these issues, I found that I had to use environment variables for both. Additionally, I was stuck on an unknown error for a while, which I later found to be a silly missed curly braces in my db connection object. 
 
-#### Using the Application <a name="usingtheapp"></a>
+## Using the Application <a name="usingtheapp"></a>
 The web application has a few main features. First is the homepage, which defaults to a sign in form.
 ![image](images/homepage.PNG)
 
