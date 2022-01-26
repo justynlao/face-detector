@@ -15,6 +15,7 @@ Test login information
         2. [Building a Static Version](#buildingstatic)
         3. [Adding State](#addingstate)
         4. [Adding Inverse Data Flow](#inverseflow)
+        5. [Fetching Data from an API](#fetchingdata)
     2. [Backend](#backend)
         1. [Making an Express Server](#express)
         2. [Creating a PostgreSQL Database](#database)
@@ -50,6 +51,9 @@ React is all about uni-directional data flow down the component hierarchy, so de
 
 #### Adding Inverse Data Flow <a name="inverseflow"></a>
 In addition to flowing down the component hierarchy, data needed a way to flow back up from the children to the parent. Thus, I passed down callbacks from the parent App component to each of the stateful children components, along with onChange handlers. This way, when the child components were updated, the callback functions would be fired in the parent component, thereby updating the state accordingly.
+
+#### Fetching Data from an API <a name="fetchingdata"></a>
+Before making the Backend, I set up hooks to fetch data from the Clarifai API on the frontend. Here is where I learned an important lesson regarding the useEffect hook. I fetched data from the API in a useEffect hook in order to fetch on mount. However, I failed to add a dependency array to my hook. As a result, fetching the data updated my state, leading to another call to useEffect, leading to another fetch, and so on. Ultimately, I used up my 1000 monthly requests to Clarifai's API within a minute! Adding an empty array as the second argument in the useEffect hook ensured that the API would only be called during the initial mount.
 
 ### Backend <a name="backend"></a>
 The second part of the project was the backend API to handle user login as well as fetching data from third-party APIs.
