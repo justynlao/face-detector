@@ -3,7 +3,8 @@ This application detects and labels faces in user inputted images. Users can reg
 
 - URL: https://face-detector-12.herokuapp.com/
 - NOTE: The application may take a while to load as it is hosted on Heroku free tier.
-- Test login information
+
+Test login information
 - email: test@gmail.com
 - pass: test
 
