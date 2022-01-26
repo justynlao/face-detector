@@ -111,7 +111,7 @@ Finally, entering an image url into the input box and clicking on the detect but
 ![image](images/facedetection.PNG)
 
 ## Built With <a name="builtwith"></a>
-#### Frontend
+#### Frontend Dependencies
 Library/Package | Version
 --------------- | -------
 |React.js | 17.0.2 |
@@ -119,7 +119,7 @@ Library/Package | Version
 |Particles.js | 3.5.3 |
 |Clarifai | 2.9.1 |
 
-#### Backend
+#### Backend Dependencies
 Library/Package | Version
 --------------- | -------
 |bcryptjs | 5.0.1 |
